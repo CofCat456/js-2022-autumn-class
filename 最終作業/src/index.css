@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-style1 {
+    @apply text-4xl font-normal leading-[49px] text-black;
+  }
+  .font-style2 {
+    @apply text-[28px] font-normal leading-[38px] text-black;
+  }
+  .font-style3 {
+    @apply text-xl font-normal leading-[27px] text-black;
+  }
+  .font-style4 {
+    @apply text-base font-normal leading-[22px] text-black;
+  }
+  .triangle {
+    @apply after:border-[10px] after:border-solid after:border-black after:border-t-transparent after:border-b-transparent after:border-r-transparent;
+  }
+  .shopping-method-circle {
+    @apply triangle relative mb-2 inline-flex aspect-square w-full items-center justify-center rounded-full border-[3px] border-solid border-black after:absolute after:top-1/2 after:-right-[65px] after:-translate-y-1/2;
+  }
+  .addShopCart {
+    @apply inline-flex w-full cursor-pointer items-center justify-center bg-black py-[10px] text-xl leading-[25px] text-white duration-300 hover:bg-[#301E5F];
+  }
+  .form-group {
+    @apply mb-5 flex flex-wrap;
+  }
+  .form-control {
+    @apply relative mr-2 min-w-[350px] rounded border border-solid border-[#CED4DA] py-2 pl-3;
+  }
+  .form-subBtn {
+    @apply inline-flex w-full max-w-[255px] cursor-pointer items-center justify-center rounded bg-black py-[10px] text-center text-xl leading-6 text-white duration-300 hover:bg-[#301E5F];
+  }
+  .error-msg {
+    @apply font-style4 absolute left-[100%] top-1/2 w-full -translate-y-1/2 text-[#C72424];
+  }
+}
+
+/* reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  border: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
